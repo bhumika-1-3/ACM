@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.details{
+position: relative;
+left: 400px;
+font-size: 1.2rem;}
+
+.addSkills{
+    position: relative;
+    top: 60px;
+    border: white dashed;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+  
+}
+.addSkills span{
+    position: relative;
+    top: 30%;
+}
+.layout{
+    color: white;
+    background-color: black;
+    padding: 50px 40px;
+}
+.layout img{
+width: 100%;
+height: 30rem;
+float: right;
+}
+
+.cardings {
+    padding-top: 100px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background-color: white;
+    color: white;
+  }
+  
+  .carding {
+    border-radius: 20px;
+
+    cursor: pointer;
+    background-color: transparent;
+    height: 300px;
+    perspective: 1000px;
+    background-color: black;
+  }
+  
+  .carding h1 {
+    font-size: 25px;
+    border-bottom: 1px #fff solid;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .carding img {
+    transform: scale(.8);
+    /* width: 80%; */
+    /* height: 300px; */
+    /* object-fit: cover; */
+  }
+  
+  .carding-inner {
+    border-radius: 20px;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .carding:hover .carding-inner {
+    transform: rotateY(180deg);
+    background-color: black;
+  
+  }
+  
+  .carding-front,
+  .carding-back {
+    border-radius: 20px;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: black;
+  }
+  .carding-front h2{
+    position: relative;
+    text-align: center;
+    color:#F13463 ;
+    top: 80px;
+  }
+  .carding-back {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    transform: rotateY(180deg);
+  }
+.carding-back h2{
+    padding-top: 30px;
+    text-align: center;
+}
+
+  @media(max-width:1200px){
+    .cardings{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .cardings {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .cardings {
+      grid-template-columns: 1fr;
+    }
+    .carding img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+    }
+  }
+  .plus{
+    position: relative;
+    top: 4rem;
+    left: 15rem;
+  }
