@@ -24,12 +24,12 @@ const Card = () => {
                   </div>
                   <div className='carding-back'>
                     <h6>{item.data}</h6>
+                    <span className='detailCard'>Details</span>
                     <span className="plus">
-                      Enroll now &nbsp;
-                      <Button className="btn btn-danger " style={{backgroundColor:'#F13463'}}  >+
+                      Enroll now: &nbsp;
+                      <Button className='btn btn-danger' style={{backgroundColor:'#F13463'}}  >+
                       </Button>
                     </span>
-                    {/* <h1>{item.mission_name}</h1> */}
                   </div>
                 </div>
               </div>
